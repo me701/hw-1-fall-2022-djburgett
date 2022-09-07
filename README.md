@@ -33,17 +33,15 @@ I am interested in 3d printing and need to model parts often. An open source too
 ## Problem 3 -- Your CPU
 
 ### Statement
-```bash
-lscpu #Displays information about the computer including processor speed, number of cores, sockets, Architecture, Model Name, etc.
-```
+
+Display CPU information using bash
 
 ### Solution
 
-To display CPU information, I used the following command:
+CPU information can be displayed using lscpu command
 
 ```bash
-ls -al # <--- that's not right, but it shows you how to include
-       #      code in Markdown!
+lscpu #Displays information about the computer including processor speed, number of cores, sockets, Architecture, Model Name, etc.
 ```
 
 ## Problem 4 -- Resource Hogs
