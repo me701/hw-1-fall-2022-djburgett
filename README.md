@@ -1,4 +1,4 @@
-# ME 701 -- Homework 1 -- Your Name Here
+# ME 701 -- Homework 1 -- Devin Burgett
 
 ## Instructions
 
@@ -27,22 +27,15 @@ or Octave).
 
 ### Solution
 
-Write your solution here.  Note, in the past, we've used a full, graphical
-version of Linux.  With WSL, you probably don't have as direct a path for
-exploring software in the Software Manager.  However, use the power of
-Google (or AskJeeves) to explore what sorts of open-source software is out
-there for technical or other applications.
+I am interested in 3d printing and need to model parts often. An open source tool that I found to do organic modeling such as rounded objects and complex ellipsoids is blender. It is generally used to create artistic 3d models but, is a very versatile modeling program which runs on python scripts.
 
 
 ## Problem 3 -- Your CPU
 
 ### Statement
 
-Figure out how to display information about your CPU via the
-command line.  This should include at least the **processor
-speed** and the **number of cores**.  Describe your command(s) below.
-(Hint: redirection is helpful; remember, that's like
-using `ls > directory_contents.txt` to dump the contents of a directory to a file.
+lscpu #Displays information about the computer including processor speed, number of cores, sockets, Architecture, Model Name, etc.
+
 
 ### Solution
 
@@ -63,6 +56,9 @@ in your writeup.
 
 ### Solution
 
+ps aux --sort -%cpu #The ps aux command shows running processes on Linux, using the -sort modifier it lists processes in descending order of cpu usage
+
+ps aux --sort -%mem #This time I sort by the memory usage in descending order
 
 
 ## Problem 5 -- `bash`
@@ -74,3 +70,7 @@ Where is `bash` located on your Linux system?  And what version of
 determine this information.
 
 ### Solution
+
+which bash #Returns the path to the bash executable, in my case usr/bin/bash
+
+echo "{BASH_VERSION}" #Responds with the version of bash by calling the variable where the release is named, mine is version 5.0.17(1)
