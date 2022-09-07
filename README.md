@@ -33,9 +33,9 @@ I am interested in 3d printing and need to model parts often. An open source too
 ## Problem 3 -- Your CPU
 
 ### Statement
-
+```bash
 lscpu #Displays information about the computer including processor speed, number of cores, sockets, Architecture, Model Name, etc.
-
+```
 
 ### Solution
 
@@ -55,11 +55,11 @@ amount of (1) processing and (2) memory.  Describe your command(s)
 in your writeup.
 
 ### Solution
-
+```bash
 ps aux --sort -%cpu #The ps aux command shows running processes on Linux, using the -sort modifier it lists processes in descending order of cpu usage
 
 ps aux --sort -%mem #This time I sort by the memory usage in descending order
-
+```
 
 ## Problem 5 -- `bash`
 
@@ -70,7 +70,8 @@ Where is `bash` located on your Linux system?  And what version of
 determine this information.
 
 ### Solution
-
+```bash
 which bash #Returns the path to the bash executable, in my case usr/bin/bash
 
 echo "{BASH_VERSION}" #Responds with the version of bash by calling the variable where the release is named, mine is version 5.0.17(1)
+```
